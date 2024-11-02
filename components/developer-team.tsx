@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image';
+
 import { Github, Instagram, Linkedin, ChevronDown, ChevronUp } from 'lucide-react'
 
 const teamMembers = [
@@ -32,7 +34,6 @@ const teamMembers = [
 ]
 
 export default function DeveloperTeam() {
-  const [hoveredMember, setHoveredMember] = useState<number | null>(null)
   const [expandedMember, setExpandedMember] = useState<number | null>(null)
 
   const toggleExpand = (index: number) => {
@@ -48,17 +49,18 @@ export default function DeveloperTeam() {
             <div
               key={member.name}
               className="relative group"
-              onMouseEnter={() => setHoveredMember(index)}
-              onMouseLeave={() => setHoveredMember(null)}
+
             >
               <div className="absolute inset-0 bg-white rounded-3xl transition-all duration-300 group-hover:blur-sm"></div>
               <div className="relative bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-3xl p-6 sm:p-8 shadow-lg transition-all duration-300 group-hover:translate-y-[-10px] group-hover:shadow-xl border border-white border-opacity-20">
                 <div className="absolute -top-16 sm:-top-20 left-1/2 transform -translate-x-1/2 w-32 sm:w-40 h-32 sm:h-40 bg-gradient-to-br from-green-400 via-blue-400 to-purple-400 rounded-full p-1 shadow-lg transition-all duration-300 group-hover:scale-110">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover rounded-full"
-                  />
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      layout="fill"       // Makes the image fill the container
+                      objectFit="cover"   // Ensures the image covers the container without distortion
+                      className="rounded-full"
+                    />
                 </div>
                 <div className="mt-20 sm:mt-24 text-center">
                   <h3 className="text-xl sm:text-2xl font-semibold  text-indigo-900">{member.name}</h3>

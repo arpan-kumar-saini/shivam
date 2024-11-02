@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
-import { Calendar, MapPin, ArrowRight, Info } from 'lucide-react'
+import { Calendar, MapPin, ArrowRight} from 'lucide-react'
 
 type Event = {
   id: number

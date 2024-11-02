@@ -126,7 +126,7 @@ export default function HeroSection() {
                   ))}
                 </div>
               </motion.div>
-              <div className="flex justify-center md:justify-start space-x-4 hidden md:block ">
+              <div className="md:flex justify-center md:justify-start space-x-4 hidden  ">
                 <motion.button
                   whileHover={{ scale: 1.05, backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
                   whileTap={{ scale: 0.95 }}

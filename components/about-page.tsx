@@ -1,11 +1,20 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef,ReactNode } from 'react'
+import Image from 'next/image';
 import { motion, useAnimation, useMotionValue, useTransform } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FaGlobeAmericas, FaRoute, FaHandsHelping, FaUsers } from 'react-icons/fa'
 
-const Section = ({ children, delay = 0 }) => {
+interface SectionProps {
+  children: ReactNode
+  delay?: number
+}
+interface TiltProps {
+  children: ReactNode
+}
+
+const Section = ({ children, delay = 0 }: SectionProps) => {
   const controls = useAnimation()
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -35,7 +44,7 @@ const Section = ({ children, delay = 0 }) => {
   )
 }
 
-const Tilt = ({ children }) => {
+const Tilt = ({ children }: TiltProps) =>  {
   const ref = useRef(null)
   const x = useMotionValue(0)
   const y = useMotionValue(0)
@@ -43,7 +52,7 @@ const Tilt = ({ children }) => {
   const rotateX = useTransform(y, [-300, 300], [30, -30])
   const rotateY = useTransform(x, [-300, 300], [-30, 30])
 
-  function handleMouse(event) {
+  function handleMouse(event: React.MouseEvent<HTMLDivElement>) {
     const rect = event.currentTarget.getBoundingClientRect()
     x.set(event.clientX - rect.left - rect.width / 2)
     y.set(event.clientY - rect.top - rect.height / 2)
@@ -81,11 +90,13 @@ export default function AboutPageComponent() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <img 
-            src="/images/arpan.jpg" 
-            alt="Cultural Club Banner" 
-            className="w-full h-full object-cover"
-          />
+          <Image
+              src="/images/arpan.jpg"
+              alt="Cultural Club Banner"
+              layout="fill" // This makes the image cover the parent container
+              objectFit="cover" // Ensures the image covers the full area without distortion
+              className="w-full h-full"
+            />
           <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
             <motion.h1 
               className="text-5xl font-bold text-white text-center"
@@ -104,7 +115,7 @@ export default function AboutPageComponent() {
               <FaGlobeAmericas className="text-5xl text-purple-600 mb-4" />
               <h2 className="text-3xl font-semibold text-gray-800 mb-4">About Us</h2>
               <p className="text-lg text-gray-600">
-                The Cultural Club is a vibrant community celebrating global diversity. Since 2010, we've been uniting people through art, music, food, and traditions, creating a tapestry of shared experiences and mutual understanding. Our mission is to foster cultural exchange and promote inclusivity in our increasingly interconnected world.
+                The Cultural Club is a vibrant community celebrating global diversity. Since 2010, we&apos;ve been uniting people through art, music, food, and traditions, creating a tapestry of shared experiences and mutual understanding. Our mission is to foster cultural exchange and promote inclusivity in our increasingly interconnected world.
               </p>
             </div>
           </Tilt>
@@ -116,7 +127,7 @@ export default function AboutPageComponent() {
               <FaRoute className="text-5xl text-green-600 mb-4" />
               <h2 className="text-3xl font-semibold text-gray-800 mb-4">Our Journey</h2>
               <p className="text-lg text-gray-600">
-                From humble beginnings to a thriving cultural hub, our journey has been one of growth, learning, and connection. We've hosted countless events, workshops, and festivals, each one adding a unique thread to our collective story. Through the years, we've seen friendships form across cultural boundaries and witnessed the power of shared experiences in breaking down stereotypes.
+                From humble beginnings to a thriving cultural hub, our journey has been one of growth, learning, and connection. We&apos;ve hosted countless events, workshops, and festivals, each one adding a unique thread to our collective story. Through the years, we&apos;ve seen friendships form across cultural boundaries and witnessed the power of shared experiences in breaking down stereotypes.
               </p>
             </div>
           </Tilt>
@@ -144,7 +155,7 @@ export default function AboutPageComponent() {
               <FaUsers className="text-5xl text-red-600 mb-4" />
               <h2 className="text-3xl font-semibold text-gray-800 mb-4">Join Our Community</h2>
               <p className="text-lg text-gray-600 mb-4">
-                Become part of our diverse family! Whether you're a culture enthusiast or simply curious, there's a place for you here. Participate in our events, share your heritage, and help us build bridges across cultures.
+                Become part of our diverse family! Whether you&apos;re a culture enthusiast or simply curious, there&apos;s a place for you here. Participate in our events, share your heritage, and help us build bridges across cultures.
               </p>
               <motion.button
                 className="w-full p-4 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-700 transition-colors"

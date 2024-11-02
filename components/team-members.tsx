@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+
+import Image from 'next/image';
 
 type TeamMember = {
   name: string
@@ -36,27 +37,27 @@ const  teamMembers: TeamMember[] = [
 ]
 
 export default function TeamMembers() {
-  const [hoveredMember, setHoveredMember] = useState<number | null>(null)
+
 
   return (
     <div className="min-h-screen  py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-indigo-900">Our Team</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-16">
-          {teamMembers.map((member, index) => (
+          {teamMembers.map((member) => (
             <div
               key={member.rollNo}
               className="relative group"
-              onMouseEnter={() => setHoveredMember(index)}
-              onMouseLeave={() => setHoveredMember(null)}
             >
               <div className="absolute inset-0  rounded-3xl transition-all duration-300 group-hover:blur-sm"></div>
               <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-xl rounded-3xl p-6 shadow-lg transition-all duration-300 group-hover:translate-y-[-10px] group-hover:shadow-xl border border-white border-opacity-20">
                 <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full p-1 shadow-lg transition-all duration-300 group-hover:scale-110">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover rounded-full"
+                <Image
+                    src={member.image}            // Source of the image
+                    alt={member.name}              // Alt text for accessibility
+                    layout="fill"                  // Fills the container fully
+                    objectFit="cover"              // Ensures image covers container without distortion
+                    className="rounded-full"       // Applies rounded styling
                   />
                 </div>
                 <div className="pt-14 text-center">

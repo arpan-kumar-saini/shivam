@@ -4,14 +4,10 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, Heart } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Button } from "@/components/ui/button"
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -23,33 +19,27 @@ const navItems = [
 ]
 
 export default function NavbarComponent() {
-  const [isOpen, setIsOpen] = useState(false)
   const [isMounted, setIsMounted] = useState(false)
   const pathname = usePathname()
 
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
-
-  const toggleMenu = () => setIsOpen(!isOpen)
+  useEffect(() => setIsMounted(true), [])
 
   if (!isMounted) return null
 
   return (
-    <nav className="bg-white shadow-md bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 ">
+    <nav className="bg-white shadow-md bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo and Brand Name */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center">
-             
               <Image
-                    src={'/images/logo.png'}
-                    alt={`cultural logo`}
-                    width={50}
-                    height={50}
-                    className="h-14 w-12"
-                  />
+                src="/images/logo.png"
+                alt="Cultural Club logo"
+                width={50}
+                height={50}
+                className="h-14 w-12"
+              />
               <span className="ml-2 text-2xl font-extrabold tracking-tight text-black">
                 Cultural Club
               </span>
@@ -62,7 +52,7 @@ export default function NavbarComponent() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`px-3  py-2 rounded-md text-sm font-medium ${
+                className={`px-3 py-2 rounded-md text-sm font-medium ${
                   pathname === item.href
                     ? 'text-black bg-gradient-to-br from-green-100 via-blue-100 to-purple-100'
                     : 'text-gray-700 hover:text-black hover:bg-gradient-to-br from-green-100 via-blue-100 to-purple-100'
@@ -91,13 +81,13 @@ export default function NavbarComponent() {
                   className="flex flex-col h-full"
                 >
                   <div className="flex items-center justify-between mb-8">
-                    <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
+                    <Link href="/" className="flex items-center">
                       <Image
-                      src={'/images/logo.png'}
-                      alt={`cultural logo`}
-                      width={60}
-                      height={50}
-                      className="h-12 w-14"
+                        src="/images/logo.png"
+                        alt="Cultural Club logo"
+                        width={60}
+                        height={50}
+                        className="h-12 w-14"
                       />
                       <span className="ml-2 text-xl font-bold text-black">
                         Cultural Club
@@ -114,7 +104,6 @@ export default function NavbarComponent() {
                             ? 'text-black bg-gradient-to-br from-green-100 via-blue-100 to-purple-100'
                             : 'text-gray-700 hover:text-black hover:bg-gradient-to-br from-green-100 via-blue-100 to-purple-100'
                         } transition-colors duration-200`}
-                        onClick={() => setIsOpen(false)}
                       >
                         {item.name}
                       </Link>
