@@ -15,7 +15,7 @@ const navItems = [
   { name: 'Events', href: '/events' },
   { name: 'Our Team', href: '/team' },
   { name: 'Contact Us', href: '/contact' },
-  { name: 'Downloads', href: '/downloads' },
+  // { name: 'Downloads', href: '/downloads' },
 ]
 
 export default function NavbarComponent() {

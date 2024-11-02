@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion, useAnimation, useMotionValue, useTransform } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FaGlobeAmericas, FaRoute, FaHandsHelping, FaUsers } from 'react-icons/fa'
+import VisionMissionSectionComponent from '@/components/vision-mission-section'
 
 interface SectionProps {
   children: ReactNode
@@ -120,8 +121,13 @@ export default function AboutPageComponent() {
             </div>
           </Tilt>
         </Section>
-
         <Section delay={0.4}>
+          <Tilt>
+          <VisionMissionSectionComponent/>
+          </Tilt>
+        </Section>
+
+        <Section delay={0.6}>
           <Tilt>
             <div className="bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 bg-opacity-70 backdrop-filter backdrop-blur-lg rounded-3xl shadow-xl p-8">
               <FaRoute className="text-5xl text-green-600 mb-4" />
@@ -133,7 +139,7 @@ export default function AboutPageComponent() {
           </Tilt>
         </Section>
 
-        <Section delay={0.6}>
+        <Section delay={0.8}>
           <Tilt>
             <div className="bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 bg-opacity-70 backdrop-filter backdrop-blur-lg rounded-3xl shadow-xl p-8">
               <FaHandsHelping className="text-5xl text-blue-600 mb-4" />
@@ -149,7 +155,7 @@ export default function AboutPageComponent() {
           </Tilt>
         </Section>
 
-        <Section delay={0.8}>
+        <Section delay={1}>
           <Tilt>
             <div className="bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 bg-opacity-70 backdrop-filter backdrop-blur-lg rounded-3xl shadow-xl p-8">
               <FaUsers className="text-5xl text-red-600 mb-4" />
