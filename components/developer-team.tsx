@@ -11,7 +11,7 @@ const teamMembers = [
     role: 'Full Stack Web Developer',
     clubRole: 'President',
     about: 'Enthusiastic about building robust and scalable web applications.',
-    image: '/images/arpan.jpg',
+    image: '/images/arpan2.jpg',
     social: {
       instagram: 'https://instagram.com/arpan_kumar_saini',
       linkedin: 'https://linkedin.com/in/arpansaini',

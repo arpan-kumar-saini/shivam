@@ -13,7 +13,7 @@ type TeamMember = {
 
 const  teamMembers: TeamMember[] = [
   { name: "Dr. Archana Sharma", rollNo: "Head Of Department", branchYear: "Electrical Department", responsibilities: "Convener", image: "/images/arpan.jpg" },
-  { name: "Arpan", rollNo: "2107350130019", branchYear: "IT (4th yr)", responsibilities: "President", image: "/images/arpan.jpg" },
+  { name: "Arpan", rollNo: "2107350130019", branchYear: "IT (4th yr)", responsibilities: "President", image: "/images/arpan2.jpg" },
   { name: "Sumanshi Roy", rollNo: "2107350130061", branchYear: "IT (4th yr)", responsibilities: "Vice-President", image: "/images/sumanshi.jpg" },
   { name: "Ritu Singh", rollNo: "2107350130050", branchYear: "IT (4th yr)", responsibilities: "Treasurer", image: "/images/ritu.jpg" },
   { name: "Mahesh", rollNo: "2207350130037", branchYear: "IT (3rd yr)", responsibilities: "Secretary", image: "/images/arpan.jpg" },
