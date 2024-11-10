@@ -65,7 +65,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="text-4xl md:text-5xl font-bold text-indigo-900 mb-6"
+                className="text-4xl md:text-5xl font-bold text-white mb-6"
               >
                  Cultural Club
               </motion.h1>
@@ -73,7 +73,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-xl md:text-2xl text-indigo-800 mb-8 md:hidden"
+                className="text-xl md:text-2xl text-white mb-8 md:hidden"
               >
                 Rajkiya Engineering College Bijnor
               </motion.p>
@@ -81,7 +81,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-xl md:text-2xl text-indigo-800 mb-8 hidden md:block"
+                className="text-xl md:text-2xl text-white mb-8 hidden md:block"
               >
                 Rajkiya Engineering College ,Bijnor
               </motion.p>
