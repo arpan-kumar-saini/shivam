@@ -141,6 +141,13 @@ export default function HeroSection() {
                 >
                   Go to Gallery
                 </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.05, backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-6 py-2 bg-white/20 backdrop-blur-md text-indigo-900 rounded-full text-lg font-semibold border border-white/50 transition-all duration-300 hover:shadow-lg"
+                >
+                  Meet The Team
+                </motion.button>
               </div>
             </div>
             <motion.div
