@@ -35,7 +35,7 @@ const  teamMembers: TeamMember[] = [
   { name: "Manish", rollNo: "2307350200031", branchYear: "EE (2nd yr)", responsibilities: "Student Coordinator", image: "/images/manish.jpg" },
   
 ]
-
+// function 
 export default function TeamMembers() {
 
 
