@@ -19,7 +19,7 @@ const  teamMembers: TeamMember[] = [
   { name: "Mahesh", rollNo: "2207350130037", branchYear: "IT (3rd yr)", responsibilities: "Secretary", image: "/images/mahesh.jpg" },
   { name: "Vanshika Saxena", rollNo: "2207350130057", branchYear: "CE (3rd yr)", responsibilities: "Jn. Secretary ", image: "/images/vanshika.jpg" },
   { name: "Shubham", rollNo: "2207350209006", branchYear: "EE (4th yr)", responsibilities: "Singing Coordinator", image: "/images/shubham.jpg" },
-  { name: "Akhilesh", rollNo: "2107350130012", branchYear: "IT (4th yr)", responsibilities: " Coordinator", image: "/images/akhilesh.jpg" },
+  { name: "Akhilesh", rollNo: "2107350130012", branchYear: "IT (4th yr)", responsibilities: " Dance Coordinator", image: "/images/akhilesh.jpg" },
   { name: "Rishabh Gupta", rollNo: "2207350200037", branchYear: "EE (3rd yr)", responsibilities: "Dance Coordinator", image: "/images/rishabh.jpg" },
   { name: "Utkarsh Sharma", rollNo: "2207350200047", branchYear: "EE (3rd yr)", responsibilities: " Treasurer", image: "/images/utkarsh.jpg" },
   { name: "Abhishek Yadav", rollNo: "2207350200003", branchYear: "EE (3rd yr)", responsibilities: "Media Head", image: "/images/abhishek.jpg" },
