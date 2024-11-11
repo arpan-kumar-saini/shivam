@@ -111,37 +111,19 @@ export default function AboutPageComponent() {
         </motion.div>
 
         <Section delay={0.2}>
-          <Tilt>
+          
             <div className="bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 bg-opacity-70 backdrop-filter backdrop-blur-lg rounded-3xl shadow-xl p-8">
               <FaGlobeAmericas className="text-5xl text-purple-600 mb-4" />
               <h2 className="text-3xl font-semibold text-gray-800 mb-4">About Us</h2>
               <p className="text-lg text-gray-600">
                 The Cultural Club is a vibrant community celebrating global diversity. Since 2010, we&apos;ve been uniting people through art, music, food, and traditions, creating a tapestry of shared experiences and mutual understanding. Our mission is to foster cultural exchange and promote inclusivity in our increasingly interconnected world.
               </p>
-            </div>
-          </Tilt>
-        </Section>
-        <Section delay={0.4}>
-          <Tilt>
-          <VisionMissionSectionComponent/>
-          </Tilt>
-        </Section>
-
-        <Section delay={0.6}>
-          <Tilt>
-            <div className="bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 bg-opacity-70 backdrop-filter backdrop-blur-lg rounded-3xl shadow-xl p-8">
-              <FaRoute className="text-5xl text-green-600 mb-4" />
+              <FaRoute className="text-5xl text-green-600 mb-4 mt-4" />
               <h2 className="text-3xl font-semibold text-gray-800 mb-4">Our Journey</h2>
               <p className="text-lg text-gray-600">
                 From humble beginnings to a thriving cultural hub, our journey has been one of growth, learning, and connection. We&apos;ve hosted countless events, workshops, and festivals, each one adding a unique thread to our collective story. Through the years, we&apos;ve seen friendships form across cultural boundaries and witnessed the power of shared experiences in breaking down stereotypes.
               </p>
-            </div>
-          </Tilt>
-        </Section>
-
-        <Section delay={0.8}>
-          <Tilt>
-            <div className="bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 bg-opacity-70 backdrop-filter backdrop-blur-lg rounded-3xl shadow-xl p-8">
+              <VisionMissionSectionComponent/>
               <FaHandsHelping className="text-5xl text-blue-600 mb-4" />
               <h2 className="text-3xl font-semibold text-gray-800 mb-4">What We Do</h2>
               <ul className="list-disc list-inside text-lg text-gray-600 space-y-2">
@@ -151,28 +133,18 @@ export default function AboutPageComponent() {
                 <li>Arrange cultural film screenings and panel discussions</li>
                 <li>Collaborate with local communities for cultural awareness initiatives</li>
               </ul>
+
             </div>
-          </Tilt>
+
+            
+        
         </Section>
 
-        <Section delay={1}>
-          <Tilt>
-            <div className="bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 bg-opacity-70 backdrop-filter backdrop-blur-lg rounded-3xl shadow-xl p-8">
-              <FaUsers className="text-5xl text-red-600 mb-4" />
-              <h2 className="text-3xl font-semibold text-gray-800 mb-4">Join Our Community</h2>
-              <p className="text-lg text-gray-600 mb-4">
-                Become part of our diverse family! Whether you&apos;re a culture enthusiast or simply curious, there&apos;s a place for you here. Participate in our events, share your heritage, and help us build bridges across cultures.
-              </p>
-              <motion.button
-                className="w-full p-4 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-700 transition-colors"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Get Involved
-              </motion.button>
-            </div>
-          </Tilt>
-        </Section>
+
+
+
+
+
       </div>
     </div>
   )
