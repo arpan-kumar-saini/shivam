@@ -1,19 +1,17 @@
 'use client'
 
-import { useEffect, useRef,ReactNode } from 'react'
+import { useEffect,ReactNode } from 'react'
 import Image from 'next/image';
-import { motion, useAnimation, useMotionValue, useTransform } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { FaGlobeAmericas, FaRoute, FaHandsHelping, FaUsers } from 'react-icons/fa'
+import { FaGlobeAmericas, FaRoute, FaHandsHelping } from 'react-icons/fa'
 import VisionMissionSectionComponent from '@/components/vision-mission-section'
 
 interface SectionProps {
   children: ReactNode
   delay?: number
 }
-interface TiltProps {
-  children: ReactNode
-}
+
 
 const Section = ({ children, delay = 0 }: SectionProps) => {
   const controls = useAnimation()
@@ -45,41 +43,7 @@ const Section = ({ children, delay = 0 }: SectionProps) => {
   )
 }
 
-const Tilt = ({ children }: TiltProps) =>  {
-  const ref = useRef(null)
-  const x = useMotionValue(0)
-  const y = useMotionValue(0)
 
-  const rotateX = useTransform(y, [-300, 300], [30, -30])
-  const rotateY = useTransform(x, [-300, 300], [-30, 30])
-
-  function handleMouse(event: React.MouseEvent<HTMLDivElement>) {
-    const rect = event.currentTarget.getBoundingClientRect()
-    x.set(event.clientX - rect.left - rect.width / 2)
-    y.set(event.clientY - rect.top - rect.height / 2)
-  }
-
-  function handleMouseLeave() {
-    x.set(0)
-    y.set(0)
-  }
-
-  return (
-    <motion.div
-      ref={ref}
-      style={{
-        rotateX,
-        rotateY,
-        transformStyle: "preserve-3d",
-      }}
-      onMouseMove={handleMouse}
-      onMouseLeave={handleMouseLeave}
-      className="cursor-pointer"
-    >
-      <div style={{ transform: "translateZ(75px)" }}>{children}</div>
-    </motion.div>
-  )
-}
 
 export default function AboutPageComponent() {
   return (
