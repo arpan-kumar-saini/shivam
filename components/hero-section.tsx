@@ -157,7 +157,7 @@ export default function HeroSection() {
               className="mt-8 md:mt-0 relative w-64 h-64 md:w-80 md:h-80  rounded-full overflow-hidden shadow-xl"
             >
               <Image
-                src="/images/logo.png"
+                src="/images/banner.jpg"
                 alt="Cultural activities"
                 layout="fill"
                 objectFit="cover"
