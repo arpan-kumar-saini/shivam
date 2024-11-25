@@ -41,7 +41,7 @@ export default function HeroSection() {
 
   return (
     <section ref={containerRef} className="relative md:min-h-screen flex items-center justify-center overflow-hidden ">
-      <div className="absolute inset-0 bg-[url('/images/arpan.jpg')] bg-cover bg-center" />
+      <div className="absolute inset-0 bg-[url('/images/banner.jpg')] bg-cover bg-center" />
       <div className="absolute inset-0  backdrop-blur-sm " />
       <motion.div
         className="absolute inset-0 pointer-events-none"
@@ -157,7 +157,7 @@ export default function HeroSection() {
               className="mt-8 md:mt-0 relative w-64 h-64 md:w-80 md:h-80  rounded-full overflow-hidden shadow-xl"
             >
               <Image
-                src="/images/banner.jpg"
+                src="/images/logo.png"
                 alt="Cultural activities"
                 layout="fill"
                 objectFit="cover"
