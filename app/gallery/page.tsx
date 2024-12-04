@@ -1,5 +1,5 @@
 import React from 'react'
-import EnhancedGalleryComponent from '../../components/gallery'
+import EnhancedGalleryComponent from '../../components/event-gallery'
 
 function page() {
   return (
