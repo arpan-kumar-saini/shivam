@@ -41,9 +41,15 @@ export default function NavbarComponent() {
                 height={50}
                 className="h-14 w-12"
               />
+              <div >
               <span className="ml-2 text-2xl font-extrabold tracking-tight text-black">
                 Cultural Club
               </span>
+              <div className="ml-2 text font-semibold tracking-tight text-black">
+                Rajkiya Engineering College ,Bijnor
+              </div>
+              </div>
+
             </Link>
           </div>
 
