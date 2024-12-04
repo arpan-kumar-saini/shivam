@@ -4,6 +4,7 @@ import { useState, useRef } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import { Calendar, MapPin, ArrowRight} from 'lucide-react'
+import pastEventsData from '@/data/events/past-events.json';
 
 type Event = {
   id: number
@@ -44,24 +45,7 @@ const ongoingEvents: Event[] = [
   }
 ]
 
-const pastEvents: Event[] = [
-  {
-    id: 4,
-    title: "Music Concert",
-    date: "2024-01-15",
-    image: "/images/arpan.jpg",
-    description: "Relive the magical moments from our winter music concert.",
-    location: "Open Air Theatre"
-  },
-  {
-    id: 5,
-    title: "Dance Workshop",
-    date: "2023-12-05",
-    image: "/images/arpan.jpg",
-    description: "Check out the highlights from our intensive dance workshop.",
-    location: "Dance Studio"
-  }
-]
+const pastEvents: Event[] = pastEventsData;
 
 export default function EventSectionComponent() {
   const [activeTab, setActiveTab] = useState<'upcoming' | 'ongoing' | 'past'>('upcoming')

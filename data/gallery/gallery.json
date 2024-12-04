@@ -3,7 +3,7 @@
     { "id": 2, "title": "Orientation Day", "image": "/images/banner.jpg", "category": "Induction Program" },
     { "id": 3, "title": "Spandan Cultural Night", "image": "/images/arpan2.jpg", "category": "Spandan 2022" },
     { "id": 4, "title": "Tech Symposium", "image": "/images/arpan.jpg", "category": "Academic Events" },
-    { "id": 5, "title": "Alumni Meet", "image": "/images/arpan2.jpg", "category": "Networking" },
+    { "id": 5, "title": "Alumni Meet", "image": "/images/img.jpg", "category": "Networking" },
     { "id": 6, "title": "Sports Day", "image": "/images/arpan2.jpg", "category": "Sports" },
     { "id": 7, "title": "Freshers Talent Show", "image": "/images/arpan2.jpg", "category": "Fresher Party" },
     { "id": 8, "title": "Department Induction", "image": "/images/arpan2.jpg", "category": "Induction Program" },
