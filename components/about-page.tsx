@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FaGlobeAmericas, FaRoute, FaHandsHelping } from 'react-icons/fa'
-import VisionMissionSectionComponent from '@/components/vision-mission-section'
+
 
 interface SectionProps {
   children: ReactNode
