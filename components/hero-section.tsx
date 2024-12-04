@@ -42,7 +42,7 @@ export default function HeroSection() {
   return (
     <section ref={containerRef} className="relative md:min-h-screen flex items-center justify-center overflow-hidden ">
       <div className="absolute inset-0 bg-[url('/images/banner.jpg')] bg-cover bg-center" />
-      <div className="absolute inset-0  backdrop-blur-sm " />
+      <div className="absolute inset-0 " />
       <motion.div
         className="absolute inset-0 pointer-events-none"
         style={{
