@@ -87,7 +87,7 @@ export default function AboutPageComponent() {
               <p className="text-lg text-gray-600">
                 From humble beginnings to a thriving cultural hub, our journey has been one of growth, learning, and connection. We&apos;ve hosted countless events, workshops, and festivals, each one adding a unique thread to our collective story. Through the years, we&apos;ve seen friendships form across cultural boundaries and witnessed the power of shared experiences in breaking down stereotypes.
               </p>
-              <VisionMissionSectionComponent/>
+              
               <FaHandsHelping className="text-5xl text-blue-600 mb-4" />
               <h2 className="text-3xl font-semibold text-gray-800 mb-4">What We Do</h2>
               <ul className="list-disc list-inside text-lg text-gray-600 space-y-2">

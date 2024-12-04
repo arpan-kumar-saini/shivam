@@ -104,7 +104,7 @@ export  default function ContactUs() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">Email</h3>
-                  <p className="text-gray-600">contact@culturalclub.com</p>
+                  <p className="text-gray-600">cultural@recb.ac.in</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4 group cursor-pointer transition-all duration-300 hover:bg-white hover:bg-opacity-20 p-2 rounded-lg">
@@ -113,7 +113,9 @@ export  default function ContactUs() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">Phone</h3>
-                  <p className="text-gray-600">+1 (123) 456-7890</p>
+                  <p className="text-gray-600">+91 9817744166 (Convener)</p>
+                  <p className="text-gray-600">+91 9528829470 (President)</p>
+                  <p className="text-gray-600">+91 7017092403 (Secretary)</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4 group cursor-pointer transition-all duration-300 hover:bg-white hover:bg-opacity-20 p-2 rounded-lg">
@@ -122,7 +124,9 @@ export  default function ContactUs() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">Address</h3>
-                  <p className="text-gray-600">123 Cultural Street, Artsville, AC 12345</p>
+                  <p className="text-gray-600"> Rajkiya Engineering College Bijnor</p>
+                  <p className="text-gray-600"> Near Eidgah, Dattyana Road, Jaleelpur Road,
+                  Chandpur (Bijnor) Uttar Pradesh - 246725</p>
                 </div>
               </div>
             </div>
