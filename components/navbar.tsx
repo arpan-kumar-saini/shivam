@@ -16,6 +16,7 @@ const navItems = [
   { name: 'Gallery', href: '/gallery' },
   { name: 'Our Team', href: '/team' },
   { name: 'Contact Us', href: '/contact' },
+  { name: 'Temp login', href: '/login' },
   // { name: 'Downloads', href: '/downloads' },
 ]
 
