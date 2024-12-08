@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Masonry from 'react-masonry-css'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X } from 'lucide-react'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import eventsData from '@/data/gallery/gallery.json';
 
 // Define the structure of our event data

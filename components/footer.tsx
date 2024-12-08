@@ -29,15 +29,15 @@ export default function FooterComponent() {
                 <div className="space-y-2">
                   <p className="text-gray-600 flex items-center">
                     <MapPin className="h-10 w-10 md:h-20 md:w-20 mr-2 text-purple-600" />
-                    46JW+MW7 Jaleel Pur, Road, near Eid Gah, Chandpur, Bulbulpur, Uttar Pradesh 246725
+                    Rajkiya Engineering College Bijnor Near Eidgah, Dattyana Road, Jaleelpur Road, Chandpur (Bijnor) Uttar Pradesh - 246725
                   </p>
                   <p className="text-gray-600 flex items-center">
                     <Mail className="h-5 w-5 mr-2 text-purple-600" />
-                    contact@culturalclub.com
+                    cultural@recb.ac.in
                   </p>
                   <p className="text-gray-600 flex items-center">
                     <Phone className="h-5 w-5 mr-2 text-purple-600" />
-                    (123) 456-7890
+                    +91 9817744166 (Convener)
                   </p>
                 </div>
               </div>
