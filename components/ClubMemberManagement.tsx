@@ -88,7 +88,7 @@ export default function ClubMemberManagement() {
 
   return (
     <div className="p-6 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 min-h-screen">
-      <Card className=" mx-8 md:mx-24  backdrop-blur-lg bg-white/30 shadow-xl">
+      <Card className=" mx-4 md:mx-24  backdrop-blur-lg bg-white/30 shadow-xl">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">Club Member Management</CardTitle>
         </CardHeader>
