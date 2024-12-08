@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "title": "Annual Cultural Fest",
+      "date": "2024-03-15",
+      "image": "/images/arpan.jpg",
+      "description": "Join us for a spectacular showcase of talent across various art forms.",
+      "location": "Main Auditorium"
+    },
+    {
+      "id": 2,
+      "title": "Poetry Slam Competition",
+      "date": "2024-02-28",
+      "image": "/images/arpan.jpg",
+      "description": "Express yourself through the power of words in our annual poetry slam.",
+      "location": "Literary Club Hall"
+    }
+  ]
+  

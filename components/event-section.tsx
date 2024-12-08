@@ -5,6 +5,8 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import { Calendar, MapPin, ArrowRight} from 'lucide-react'
 import pastEventsData from '@/data/events/past-events.json';
+import ongoingEventsData from '@/data/events/ongoing-events.json';
+import upcomingEventsData from '@/data/events/upcoming-events.json';
 
 type Event = {
   id: number
@@ -15,36 +17,10 @@ type Event = {
   location: string
 }
 
-const upcomingEvents: Event[] = [
-  {
-    id: 1,
-    title: "Annual Cultural Fest",
-    date: "2024-03-15",
-    image: "/images/arpan.jpg",
-    description: "Join us for a spectacular showcase of talent across various art forms.",
-    location: "Main Auditorium"
-  },
-  {
-    id: 2,
-    title: "Poetry Slam Competition",
-    date: "2024-02-28",
-    image: "/images/arpan.jpg",
-    description: "Express yourself through the power of words in our annual poetry slam.",
-    location: "Literary Club Hall"
-  }
-]
 
-const ongoingEvents: Event[] = [
-  {
-    id: 3,
-    title: "Art Exhibition",
-    date: "2024-02-10 to 2024-02-20",
-    image: "/images/arpan.jpg",
-    description: "Explore the creative works of our talented student artists.",
-    location: "Art Gallery"
-  }
-]
 
+const upcomingEvents: Event[] = upcomingEventsData;
+const ongoingEvents: Event[] = ongoingEventsData;
 const pastEvents: Event[] = pastEventsData;
 
 export default function EventSectionComponent() {
@@ -171,7 +147,7 @@ export default function EventSectionComponent() {
   )
 
   return (
-    <section ref={sectionRef} className="py-16 min-h-screen">
+    <section ref={sectionRef} className="py-16 ">
       <motion.div
         style={{ y, opacity }}
         className="container mx-auto px-4"

@@ -42,7 +42,7 @@ export default function DeveloperTeam() {
     <div className="min-h-[500px] p-4 sm:p-8 flex items-center justify-center">
       <div className="max-w-4xl w-full">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-indigo-900">Our Developer Team</h2>
-        <div className="grid grid-cols-2 gap-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
           {teamMembers.map((member, index) => (
             <div
               key={member.name}
