@@ -38,7 +38,7 @@ export default function EventGallery() {
 
   return (
     <div className="min-h-screen p-8 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
-      <h2 className="text-4xl font-bold text-center mb-8 text-indigo-800">Our Events</h2>
+      <h2 className="text-4xl font-bold text-center mb-8 text-indigo-800">Events Gallery</h2>
       
       <Tabs defaultValue="All" className="w-full mb-8 ">
         <TabsList className="w-full flex flex-wrap justify-center bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-2">
