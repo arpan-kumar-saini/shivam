@@ -40,8 +40,8 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section ref={containerRef} className="relative md:min-h-screen flex items-center justify-center overflow-hidden ">
-      <div className="absolute inset-0 bg-[url('/images/banner.jpg')] bg-cover bg-center" />
+    <section ref={containerRef} className="relative h-[800px] md:min-h-screen flex items-center justify-center overflow-hidden ">
+      <div className="absolute inset-0  bg-[url('/images/banner.jpg')] bg-cover bg-center" />
       <div className="absolute inset-0 " />
       <motion.div
         className="absolute inset-0 pointer-events-none"
@@ -58,7 +58,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="bg-white/30 backdrop-blur-md rounded-3xl p-8 shadow-lg flex flex-col md:flex-row items-center"
+            className="bg-white/30 backdrop-blur-md rounded-3xl h-[660px] md:h-[500px] p-8 shadow-lg flex flex-col md:flex-row items-center"
           >
             <div className="flex-1 pr-8 text-center md:text-left ">
               <motion.h1
@@ -85,6 +85,9 @@ export default function HeroSection() {
               >
                 Rajkiya Engineering College ,Bijnor
               </motion.p>
+              <p className="text-lg text-indigo-950 mb-6 md:hidden">
+                  Join us in a vibrant community where students come together to explore their interests and talents. The Cultural Club is your perfect platform to shine!
+                </p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
